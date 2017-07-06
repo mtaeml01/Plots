@@ -13,7 +13,7 @@ power$Time = strptime(x = power$Time, format = "%H:%M:%S")
 power_sub = subset(power, Date >= "2007-02-01" & Date <= "2007-02-02")
 
 # Open a png device
-png(filename = "plot2.png")
+png(filename = "plot2.png", width = 480, height = 480)
 
 # Create the plot and save it to the png device
 plot(power_sub$Global_active_power, type = "l", xaxt = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
